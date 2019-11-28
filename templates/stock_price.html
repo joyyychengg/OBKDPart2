@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>US Stock</title>
+    </head>
+    {% if tCode %} 
+
+    <body>
+        <h2><u>Latest US Stock Price</u></h2>
+        <h2>US Stock Tinder ({{ tCode }})</h2>
+        <h2>Closing Stock Price ({{ sPrice }})</h2>
+        <h2>Closing Volume ({{ cVolume }})</h2>
+        <h2>Date and time ({{ dTime }})</h2>
+
+        <a href = "stock">back to stock</a>
+
+    </body>
+
+    {% else %}
+
+    <body>
+        <h1>No price date</h1>
+        <a href = "stock">back to stock</a>
+    </body>
+
+    {% endif %}
+</html>
